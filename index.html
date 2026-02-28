@@ -36,7 +36,7 @@
       <h1>Civic Lens</h1>
 
       <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
-      
+
       <nav class="mobile-nav" aria-label="Mobile Navigation">
         <input type="checkbox" id="menu-toggle" hidden>
         <label for="menu-toggle" class="menu-button">Menu</label>
@@ -63,7 +63,7 @@
         <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
         <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
 
-        <video width="640" height="480" controls>
+        <video class="article-video" controls>
           <source src="videos/water-management.mp4" type="video/mp4">
         </video>
       </article>
@@ -72,13 +72,13 @@
         <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
         <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
 
-        <video width="640" height="480" controls>
+        <video class="article-video" controls>
           <source src="videos/voter-suppression.mp4" type="video/mp4">
         </video>
       </article>
     </section>
 
-    <section>
+    <section id="featured-articles">
       <h2>Featured Articles</h2>
       <article>
         <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
@@ -145,45 +145,70 @@
       <h2>Stay Informed. Stay Empowered.</h2>
         <p>Receive text messages with the news you want to know.</p>
         <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-          <label for=name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <div class="input-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
 
-          <label for="phone">Mobile</label>
-          <input type="tel" id="phone" name="phone" required>
+          <div class="input-field">
+            <label for="phone">Mobile</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
 
           <fieldset>
             <legend>Notification Preferences</legend>
-            <input type="radio" id="email" name="notification-preferences">
-            <label for="email">Email</label>
-            <input type="radio" id="tel" name="notification-preferences">
-            <label for="phone">Mobile</label>
+            
+            <div class="checkbox-field">
+              <input type="checkbox" id="breaking-news" name="breaking-news" value="Breaking News">
+              <label for="breaking-news">Breaking News</label>
+            </div>
+
+            <div class="checkbox-field">
+              <input type="checkbox" id="politics" name="politics" value="Politics">
+              <label for="politics">Politics</label>
+            </div>
+
+            <div class="checkbox-field">
+              <input type="checkbox" id="weather" name="weather" value="Weather">
+              <label for="weather">Weather</label>
+            </div>
+
+            <div class="checkbox-field">
+              <input type="checkbox" id="sports" name="sports" value="Sports">
+              <label for="sports">Sports</label>
+            </div>
+
+            <div class="checkbox-field">
+              <input type="checkbox" id="entertainment" name="entertainment" value="Entertainment">
+              <label for="entertainment">Entertainment</label>
+            </div>
+
+            <div class="checkbox-field">
+              <input type="checkbox" id="world" name="world" value="World">
+              <label for="world">World</label>
+            </div>
+
+            <div class="checkbox-field">
+              <input type="checkbox" id="financial" value="Financial">
+              <label for="financial">Financial</label>
+            </div>
           </fieldset>
 
-          <input type="button" id="submit" value="Submit">
+          <input type="button" id="submit" value="Subscribe">
         </form>
     </section>
     
-    <footer>
-      <section id="sitemap">
-        <a href=#breaking-news">Breaking News</a>
-        <a href="#">Politics</a>
-        <a href="#">Weather</a>
-        <a href="#">Sports</a>
-        <a href="#">Entertainment</a>
-        <a href="#">World</a>
-        <a href="#">Financial</a>
-        
-        <a class="subscribe" href="#">Subscribe</a>
-      </section>
-      
+    <footer>      
       <h2>Follow Us</h2>
-      <section>
+      <section id="follow-us-section">
         <a href="#">Twitter/X</a>
         <a href="#">Instagram</a>
         <a href="#">YouTube</a>
         <a href="#">TikTok</a>
         <a href="#">LinkedIn</a>
-        
+      </section>
+
+      <section id="copyright">
         <small>&copy; 2025 Civic Lens. All rights reserved.</small>
       </section>
     </footer>
