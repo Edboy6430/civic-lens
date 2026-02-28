@@ -96,7 +96,7 @@ body.dark-mode {
   overflow: hidden;
 }
 
-/* ///ADD/// Navigation Styles */
+/* Navigation Styles */
 nav {
   margin-top: 24px;
 }
@@ -119,7 +119,7 @@ nav a {
   border-radius: 12px;
 }
 
-/* ///ADD/// Global Layout Styles */
+/* Global Layout Styles */
 section {
   padding-left: 10%;
   padding-right: 10%;
@@ -157,10 +157,16 @@ blockquote {
 #breaking-news {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 #breaking-news article {
   background-color: var(--news-flash);
   padding: 16px;
+  border: solid var(--truth-text);
+  filter: drop-shadow(0px 8px 8px);
+}
+#breaking-news h2 {
+  grid-column: first / span 2;
 }
 #breaking-news h3 {
   color: var(--watchdog-white);
@@ -169,7 +175,7 @@ blockquote {
   color: var(--watchdog-white);
 }
 
-/* ///ADD/// Global Text Styles */
+/* Global Text Styles */
 h1 {
   font-family: var(--font-heading);
   font-size: 3.5rem;
