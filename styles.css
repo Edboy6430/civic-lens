@@ -1,9 +1,57 @@
-/* CSS by ///ADD/// YOUR NAME */
+/* CSS by Edward Kim */
 
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-/* ///ADD/// CSS Reset */
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 
 /* Root Variables */
@@ -38,17 +86,95 @@ body.dark-mode {
   cursor: pointer;
 }
 
-/* ///ADD/// Skip Link Styles */
+/* Skip Link Styles */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
 /* ///ADD/// Navigation Styles */
+nav {
+  margin-top: 24px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+nav li {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+}
+
+nav a {  
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 8px;
+  text-decoration: none;
+}
 
 /* ///ADD/// Global Layout Styles */
+section {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.mobile-nav label {
+  display: none;
+}
+
+#top-section {
+  background-color: var(--blue-bulletin);
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+
+.tagline {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--watchdog-white);
+  text-transform: capitalize;
+  font-style: italic;
+  font-variation-settings: "wdth" 40;
+  padding-bottom: 8px;
+}
 .subscribe {
   color: red;
 }
 
 /* ///ADD/// Global Text Styles */
+h1 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--watchdog-white);
+  padding-bottom: 12px;
+}
 
+h2 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  padding-bottom: 4px;
+}
+
+ p {
+  font-family: var(--font-body);
+  padding-bottom: 4px;
+ }
 
 /* ///ADD/// medium styles 620px */
 
