@@ -289,15 +289,18 @@ footer {
   background-color: var(--blue-bulletin);
   display: flex;
   flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 32px;
 }
 footer h2 {
   font-size: 1.25rem;
   color: var(--watchdog-white);
-  padding: 32px 10% 32px 10%;
 }
 #follow-us-section {
   display: flex;
   gap: 16px;
+  margin-bottom: 32px;
 }
 #copyright {
   text-align: center;
