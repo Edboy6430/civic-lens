@@ -123,6 +123,11 @@ nav a {
 
 .menu {
   display: none;
+  width: 100%;
+}
+
+.menu li, a {
+  width: 100%;
 }
 
 
@@ -351,8 +356,12 @@ a:hover {
     background-color: var(--blue-bulletin);
   }
 
-  #menu-toggle:checked + ul {
-    display: block;
+  #menu-toggle:checked + .menu-button + .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+    text-align: center;
   }
   #breaking-news {
     display: flex;
