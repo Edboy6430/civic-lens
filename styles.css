@@ -370,6 +370,10 @@ a:hover {
   .menu-button:hover {
     background-color: var(--blue-bulletin);
   }
+  
+  .menu {
+    display: hidden;
+  }
 
   #menu-toggle:checked + .menu-button + .menu {
     display: flex;
@@ -483,7 +487,7 @@ a:hover {
 /* Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(#menu-toggle:checked))) {
   .menu {
-    display: block;
+    display: flex;
     width: 100%;
   }
 }
