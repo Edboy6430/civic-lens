@@ -478,7 +478,7 @@ a:hover {
 
 /* Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(#menu-toggle:checked))) {
-  .menu a {
+  .menu {
     display: block;
     width: 100%;
   }
