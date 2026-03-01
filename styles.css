@@ -472,7 +472,11 @@ a:hover {
 
 @media (prefers-reduced-motion: reduce) {
   #breaking-news-section article {
-    transition: none;
+    transition: all 0.2 linear;
+  }
+
+  #featured-articles article {
+    transition: all 0.2 linear;
   }
 }
 
