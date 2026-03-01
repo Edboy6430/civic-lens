@@ -18,13 +18,12 @@
   <title>Civic Lens</title>
 </head>
 <body>
-  <main id="main">
     <header>
-      <div class="skip-link">
-        Skip to <a href="#main">main content</a>
-      </div>
-    </header>
-
+    <div class="skip-link">
+      Skip to <a href="#main">main content</a>
+    </div>
+  </header>
+  <main id="main">
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -41,7 +40,7 @@
         <input type="checkbox" id="menu-toggle" hidden>
         <label for="menu-toggle" class="menu-button">Menu</label>
         <ul class="menu">
-          <li><a href="#breaking-news">Breaking News</a></li>
+          <li><a href="#breaking-news-section">Breaking News</a></li>
           <li><a href="#featured-articles">Featured Articles</a></li>
           <li><a href="#alerts">Alerts</a></li>
           <li><a href="#social">Social</a></li>
@@ -192,25 +191,25 @@
             </div>
           </fieldset>
 
-          <input type="button" id="submit" value="Subscribe">
+          <input type="submit" id="submit" value="Subscribe">
         </form>
     </section>
-    
-    <footer>      
-      <h2>Follow Us</h2>
-      <div id="follow-us-section">
-        <a href="#">Twitter/X</a>
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
-        <a href="#">TikTok</a>
-        <a href="#">LinkedIn</a>
-      </div>
-
-      <div id="copyright">
-        <small>&copy; 2025 Civic Lens. All rights reserved.</small>
-      </div>
-    </footer>
   </main>
+
+    <footer>      
+    <h2>Follow Us</h2>
+    <div id="follow-us-section">
+      <a href="#">Twitter/X</a>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">TikTok</a>
+      <a href="#">LinkedIn</a>
+    </div>
+
+    <div id="copyright">
+      <small>&copy; 2025 Civic Lens. All rights reserved.</small>
+    </div>
+  </footer>
   <script>
     const toggleButton = document.getElementById('theme-toggle');
   
