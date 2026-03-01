@@ -372,7 +372,7 @@ a:hover {
   }
   
   .menu {
-    display: hidden;
+    display: none;
   }
 
   #menu-toggle:checked + .menu-button + .menu {
