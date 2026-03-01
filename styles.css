@@ -488,6 +488,5 @@ a:hover {
 @supports (selector(:has(#menu-toggle:checked))) {
   .menu {
     display: flex;
-    width: 100%;
   }
 }
